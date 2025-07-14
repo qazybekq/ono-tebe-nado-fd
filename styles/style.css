@@ -1,4 +1,5 @@
 /* место для вашего кода */
+
 body {
   width: 1100px;
   margin: 0 auto;
@@ -12,7 +13,6 @@ body {
   box-sizing: border-box;
   width: 100%;
   max-width: 1100px;
-  /* min-height: 100px; */
   margin: auto;
 }
 
@@ -25,62 +25,75 @@ body {
   align-items: center;
   padding: 32px 48px 0 48px;
   background: #fff;
-  /* font-weight: 400;
-  height: 293px; */
+  height: 293px;
 }
 
 .header__menu-item {
   color: #111;
   text-decoration: none;
   font-weight: 400;
-  transition: color 0.2s;
-
 }
 
 .header__menu {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
+  justify-content: center;
+  font-family: Raleway;
+  gap: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .header__menu-list {
   display: flex;
-  flex-direction: row;
   gap: 25px;
-  /* justify-content: center; */
   align-items: center;
+  justify-content: center;
   list-style-type: circle;
+  width: 391.4786376953125;
+  height: 22.00001335144043;
+  /* margin-top: 133px; */
+  margin-left: 50px;
+  gap: 32px;
 }
 
 .header__menu-list-item a {
-  display: inline-block;
-  
+  display: block;
 }
 
 .header__menu-item-active .header__menu-link {
   text-decoration: none;
 }
 
+
 .header__logo-image {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 148px;
+  height: 105px;
+  margin-right: 100px;
 }
 
 .address {
-  /* margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center; */
-  text-align: right;
-  font-size: 15px;
-  line-height: 1.5;
-  font-style: normal;
-  min-width: 230px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+  text-align: left;
+  font-size: 18px;
+  font-style: normal ;
+  width: 240px;
 }
+
+p .street__address {
+  word-break: normal;
+}
+
 
 /* --------------COVER------------- */
 
@@ -114,10 +127,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: space-evenly; */
   width: 100%;
   margin-top: 120px;
-  /* margin-bottom: 220px; */
   color: #fff;
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: bold;
@@ -152,14 +163,17 @@ body {
   font-size: 18px;
   color: #fff;
   letter-spacing: 30%;
-  /* bottom: 10px; */
 }
 
 .cover__subtitle {
   color: #fff;
-  font-size: 18px;
-  letter-spacing: 0.15em;
-  margin-left: 40px;
+  /* margin-left: 50px; */
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 15%;
   text-transform: uppercase;
 }
 
@@ -174,10 +188,9 @@ body {
   cursor: pointer;
 }
 
-
 /* --------------LOTS------------- */
 .lots {
-  margin-top: 60px;
+  margin-top: 180px;
   width: 1052;
   height: 723;
   top: 1230px;
@@ -185,16 +198,15 @@ body {
 }
 
 .lots__heading {
+  margin-left: 40px;
   font-size: 40px;
   font-weight: bold;
-  letter-spacing: 0.05em;
   margin-bottom: 36px;
 }
 
 .lots__card-list {
   width: 334;
   opacity: 1;
-
   display: flex;
   gap: 25px;
   list-style: none;
@@ -254,7 +266,7 @@ body {
   position: relative;
   z-index: 2;
   color: #fff;
-  margin: 48px 20px 16px 20px;
+  margin: 48px 48px 16px 40px;
   font-family: Raleway, Arial, sans-serif;
   font-size: 22px;
   line-height: 120%;
@@ -263,17 +275,21 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-style: solid;
-  text-decoration-thickness: 0%;
+  font-size: 22px;
+}
+
+.card h3 {
+  text-decoration: underline;
 }
 
 .card__text {
   position: relative;
   z-index: 2;
   color: #fff;
-  margin: 0 20px 32px 20px;
-  font-family: Raleway;
+  margin: 0 40px 32px 40px;
+  font-family: 'Raleway';
   font-weight: 400;
-  font-style: Regular;
+  font-style: normal;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0%;
@@ -331,6 +347,10 @@ body {
   font-weight: bold;
   margin-bottom: 28px;
   text-transform: uppercase;
+}
+
+.about__content {
+  margin-top: 133px;
 }
 
 .about__text {
