@@ -172,28 +172,16 @@ body {
   margin-right: 40px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
 }
 
 
 /* --------------LOTS------------- */
-
-
-.lots {
-  width: 1052px;
-  height: 723px;
-  top: 1230px;
-  left: 24px
-}
-
 .lots {
   margin-top: 60px;
   width: 1052;
   height: 723;
   top: 1230px;
   left: 24px;
-  opacity: 1;
-
 }
 
 .lots__heading {
@@ -236,8 +224,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: 1;
-  /* filter: brightness(0.7); */
-  /* background: #00000099; */
   width: 334;
 }
 
@@ -260,7 +246,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Черный overlay с прозрачностью */
+  background-color: rgba(0, 0, 0, 0.6); 
   z-index: 2;
 }
 
@@ -269,7 +255,6 @@ body {
   z-index: 2;
   color: #fff;
   margin: 48px 20px 16px 20px;
-  /* text-shadow: 0 2px 8px rgba(0,0,0,0.3); */
   font-family: Raleway, Arial, sans-serif;
   font-size: 22px;
   line-height: 120%;
@@ -293,7 +278,6 @@ body {
   line-height: 120%;
   letter-spacing: 0%;
 }
-
 
 .lots__look-more-link {
   display: block;
