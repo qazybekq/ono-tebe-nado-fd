@@ -88,7 +88,6 @@ body {
   letter-spacing: 0%;
   text-align: left;
   font-size: 18px;
-  font-style: normal ; 
 }
 
 p .street__address {
@@ -190,7 +189,6 @@ p .street__address {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-  text-transform: uppercase;
 }
 
 /* --------------LOTS------------- */
@@ -355,8 +353,6 @@ p .street__address {
 }
 
 .about__title {
-  font-size: 32px;
-  font-weight: bold;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-family: 'Raleway';
@@ -364,8 +360,6 @@ p .street__address {
   font-style: 400;
   font-size: 40px;
   line-height: 100%;
-  text-transform: uppercase;
-
 }
 
 .about__content {
