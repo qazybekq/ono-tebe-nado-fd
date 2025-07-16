@@ -8,9 +8,6 @@ body {
 
 .content-section {
   box-sizing: border-box;
-  /* width: 100%;
-  max-width: 1100px;
-  margin: auto; */
 }
 
 
@@ -20,20 +17,18 @@ body {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 0 50px 0 50px;
+  padding: 91px 0 96px 15px;
   background: #fff;
-  height: 290px;
-  gap: 80px;
+  overflow: hidden;
 }
 
 .header__menu {
   width: auto;
-  white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content:center;
-  font-family: 'Raleway';
-  gap: 32px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  /* gap: 20px; */
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -47,21 +42,20 @@ body {
 
 .header__menu-list {
   display: flex;
-  gap: 34px;
+  gap: 32px;
   align-items: center;
   justify-content: center;
   list-style: circle;
-  width: 391.4786376953125;
-  height: 22.00001335144043;
+  padding: 0;
 }
 
-.header__menu-list-item a {
+.header__menu-item a {
   display: block;
-  max-width: 170px;
 }
 
-.header__menu-item-active .header__menu-link {
+.header__menu-item-active {
   text-decoration: none;
+  list-style: none;
 }
 
 
@@ -72,25 +66,29 @@ body {
   justify-content: center;
   width: 148px;
   height: 105px;
-  margin-left: -41px;
-  margin-right: 104px;
+  margin-right: 15px;
+  margin-top: 1px;
 }
 
 .address {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+  font-size: 18px;
+}
+
+.address__header {
+  text-align: left;
   justify-self: end;
   max-width: 240px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: Raleway;
-  font-weight: 400;
-  line-height: 24.3px;
-  letter-spacing: 0%;
-  text-align: left;
-  font-size: 18px;
+  margin-right: 50px;
 }
 
-p .street__address {
+p .address__text {
   word-break: normal;
 }
 
@@ -103,16 +101,14 @@ p .street__address {
   flex-direction: column;
   justify-content: space-between ;
   align-items: normal;
-  min-height: 757px;
-  height: 757px;
   padding: 80px 50px 0 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
-.cover__overlay {
+.overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
@@ -158,8 +154,7 @@ p .street__address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
-  margin-bottom: 50px;
+  margin: 112px 0 50px 1px;
   color: #fff;
   font-weight: 400;
   word-spacing: 19px;
@@ -167,7 +162,7 @@ p .street__address {
 
 .cover__subtitle {
   color: #fff;
-  font-family: 'Raleway';
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -178,12 +173,12 @@ p .street__address {
 
 .cover__button {
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid currentColor;
   color: #fff;
   padding: 12px 32px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'Raleway';
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 500;
   font-size: 22px;
   line-height: 100%;
@@ -193,39 +188,29 @@ p .street__address {
 
 /* --------------LOTS------------- */
 .lots {
-  margin-top: 180px;
-  width: 1052px;
-  height: 723px;
-  top: 1230px;
-  left: 24px;
+  margin-top: 181px;
+  /* width: 1052px; */
 }
 
 .lots__heading {
   margin-left: 64px;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .lots__card-list {
-  opacity: 1;
+  /* opacity: 1; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly ;
-  gap: 25px;
+  gap: 26px;
   list-style: none;
-  padding: 0;
-  margin: 0 0 0 24px;
+  margin-left: 24px;
 }
 
 .lots__card-list-item {
-  /* margin-left: 20px ; */
   width: 334px;
-  height: 596px;
-  min-height: 400px;
-  flex: 1 1 0;
-  margin: 0;
 }
 
 .card-link {
@@ -238,7 +223,6 @@ p .street__address {
   position: relative;
   height: 100%;
   border-radius: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -246,33 +230,17 @@ p .street__address {
   inset: 0;
   background-size: cover;
   background-position: center;
-  z-index: 1;
+  z-index: 0;
   width: 334px;
-}
-
-.card_type_film {
-  background-image: url('../images/card-lot-01.jpg');
-  z-index: 0;
-}
-
-.card_type_book {
-  background-image: url('../images/card-lot-02.jpg');
-  z-index: 0;
-}
-
-.card_type_art {
-  background-image: url('../images/card-lot-03.jpg');
-  z-index: 0;
 }
 
 .card__title {
   width: 254px;
-  height: 110px;
   position: relative;
   z-index: 2;
   color: #fff;
   margin: 48px 48px 16px 40px;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   line-height: 120%;
   font-weight: 700;
   letter-spacing: 0%;
@@ -280,9 +248,22 @@ p .street__address {
   text-decoration: underline;
   text-decoration-style: solid;
   font-size: 22px;
+  margin-bottom: 35px;
 }
 
-.card h3 {
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+}
+
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_art {
+  background-image: url('../images/card-lot-03.jpg');
+}
+
+.card h2 {
   text-decoration: underline;
 }
 
@@ -292,7 +273,7 @@ p .street__address {
   z-index: 2;
   color: #fff;
   margin: 0 40px 47px 40px;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -305,7 +286,7 @@ p .street__address {
   color: #111;
   text-decoration: underline;
   margin: 33px 0 0 64px;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -315,9 +296,9 @@ p .street__address {
 
 .about {
   display: grid;
-  grid-template-columns: 334px 1fr;
+  grid-template-columns: 324px auto;
   gap: 60px;
-  margin-top: 160px;
+  margin-top: 156px;
   margin-bottom: 80px;
   align-items: flex-start;
   left: 24px;
@@ -355,7 +336,7 @@ p .street__address {
 .about__title {
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 700;
   font-style: 400;
   font-size: 40px;
@@ -364,20 +345,20 @@ p .street__address {
 
 .about__content {
   margin-top: 104px;
-  margin-left: -10px;
+  margin-right: 20px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  margin-top: 102px;
+  line-height: 26px;
+  letter-spacing: 1.02px;
+  margin-top: 100px;
 }
 
 .about__text p {
@@ -391,39 +372,38 @@ p .street__address {
 .footer {
   display: grid;
   grid-template-columns: 287px 488px 235px;
-  align-items: start;
+  place-items: center;
+  /* align-items: center; */
   padding: 40px 0 32px 0;
-  border-top: 1px solid #e0e0e0;
   font-size: 16px;
   background: #fff;
-  margin-top: 143px;
+  margin-top: 96px;
   gap: 0 20px;
 }
 
-/* .footer__address {
-  font-style: normal;
-  text-align: left;
-  min-width: 230px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.address__footer {
+  margin-top: 24px;
   margin-left: 50px;
-  margin-top: 65px;
-} */
+  max-width: 240px;
+}
 
 .footer__menu {
+  display: flex;
+  flex-direction: column;
   justify-self: center;
+  align-items: center;
 }
 
 .footer__menu-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
+  margin-top: 0;
   align-items: center;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -433,12 +413,10 @@ p .street__address {
 }
 
 .footer__menu-link {
-  color: #111;
   text-decoration: underline;
-  font-size: 16px;
 }
 
-.footer__menu-link_active {
+.footer__menu-link-active {
   text-decoration: none;
 }
 
@@ -447,7 +425,7 @@ p .street__address {
   gap: 20px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 24px;
   justify-self: end;
 }
 
