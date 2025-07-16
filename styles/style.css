@@ -162,7 +162,7 @@ p .address__text {
 
 .cover__subtitle {
   color: #fff;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -178,7 +178,7 @@ p .address__text {
   padding: 12px 32px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 100%;
@@ -240,7 +240,7 @@ p .address__text {
   z-index: 2;
   color: #fff;
   margin: 48px 48px 16px 40px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   line-height: 120%;
   font-weight: 700;
   letter-spacing: 0%;
@@ -273,7 +273,7 @@ p .address__text {
   z-index: 2;
   color: #fff;
   margin: 0 40px 47px 40px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -286,7 +286,7 @@ p .address__text {
   color: #111;
   text-decoration: underline;
   margin: 33px 0 0 64px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -336,7 +336,7 @@ p .address__text {
 .about__title {
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: 400;
   font-size: 40px;
@@ -352,7 +352,7 @@ p .address__text {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -401,9 +401,8 @@ p .address__text {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin-top: 0;
   align-items: center;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
