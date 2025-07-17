@@ -19,7 +19,7 @@ body {
   align-items: center;
   padding: 91px 0 96px 15px;
   background: #fff;
-  overflow: hidden;
+
 }
 
 .header__menu {
@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content:center;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;;
-  /* gap: 20px; */
+  gap: 12px;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -36,26 +36,29 @@ body {
 
 .header__menu-item {
   color: #111;
-  text-decoration: none;
   font-weight: 400;
+  list-style: circle;
 }
 
 .header__menu-list {
   display: flex;
-  gap: 32px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
-  list-style: circle;
   padding: 0;
 }
 
 .header__menu-item a {
   display: block;
+  margin-right: 3px;
 }
 
 .header__menu-item-active {
-  text-decoration: none;
   list-style: none;
+}
+
+.header__menu-item-active .header__menu-link{
+  text-decoration: none;
 }
 
 
@@ -74,8 +77,8 @@ body {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 24.3px;
-  letter-spacing: 0%;
   font-size: 18px;
+  font-style: normal;
 }
 
 .address__header {
@@ -135,16 +138,23 @@ p .address__text {
 .accent-span {
   display: block;
   width: 100%;
-  margin: 18px 0 0 16px;
+}
 
+.text-left {
+  text-align: left;
+  margin-top: 7px;
 }
 
 .text-center {
   text-align: center;
+  margin-top: 26px;
+  padding-left: 30px;
 }
 
 .text-right {
   text-align: right;
+  margin-top: 25px;
+  padding-left: 614px;
 }
 
 .cover__description {
@@ -154,10 +164,10 @@ p .address__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 112px 0 50px 1px;
+  margin: 110px 0 50px 1px;
   color: #fff;
   font-weight: 400;
-  word-spacing: 19px;
+  word-spacing: 18px;
 }
 
 .cover__subtitle {
@@ -175,7 +185,7 @@ p .address__text {
   background: transparent;
   border: 2px solid currentColor;
   color: #fff;
-  padding: 12px 32px;
+  padding: 11px 32px;
   text-transform: uppercase;
   cursor: pointer;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -204,7 +214,7 @@ p .address__text {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 26px;
+  gap: 25px;
   list-style: none;
   margin-left: 24px;
 }
@@ -301,7 +311,6 @@ p .address__text {
   margin-top: 156px;
   margin-bottom: 80px;
   align-items: flex-start;
-  left: 24px;
 }
 
 .about__column_logo {
@@ -345,26 +354,19 @@ p .address__text {
 
 .about__content {
   margin-top: 104px;
-  margin-right: 20px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  line-height: 26px;
-  letter-spacing: 1.02px;
-  margin-top: 100px;
-}
-
-.about__text p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
+  line-height: 24px;
+  margin-top: 104px;
+  padding-right: 28px;
 }
 
 /* --------------FOOTER------------- */
@@ -374,15 +376,15 @@ p .address__text {
   grid-template-columns: 287px 488px 235px;
   place-items: center;
   /* align-items: center; */
-  padding: 40px 0 32px 0;
+  padding: 60px 0 32px 0;
   font-size: 16px;
   background: #fff;
-  margin-top: 96px;
+  margin-top: 89px;
   gap: 0 20px;
 }
 
 .address__footer {
-  margin-top: 24px;
+  margin-top: 31px;
   margin-left: 50px;
   max-width: 240px;
 }
@@ -395,27 +397,20 @@ p .address__text {
 }
 
 .footer__menu-list {
-  list-style: none;
   padding: 0;
-  margin-top: 0;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  list-style: none;
   align-items: center;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
 }
 
-.footer__menu-link {
-  text-decoration: underline;
-}
-
-.footer__menu-link-active {
+.footer__menu-item-active .footer__menu-link {
   text-decoration: none;
 }
 
@@ -424,7 +419,7 @@ p .address__text {
   gap: 20px;
   list-style: none;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   justify-self: end;
 }
 
